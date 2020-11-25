@@ -252,7 +252,7 @@ section[class*="ishikathreadtracker-"] * {
 .ishika-charimg:before {
 	content: "";
 	display: block;
-	background: var(--img) 0 / cover no-repeat;
+	background: var(--img);
 	width: 175px;
 	height: 250px;
 	z-index: 2;

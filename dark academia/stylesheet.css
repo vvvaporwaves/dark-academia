@@ -1,3 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+
+.gryffindor {
+	--shipcolour: #fe7261;
+}
+
+.ravenclaw {
+	--shipcolour: #40c5f1;
+}
+
+.slytherin {
+	--shipcolour: #64f050;
+}
+
+.hufflepuff {
+	--shipcolour: #eedf4e;
+}
+
+.faculty {
+	--shipcolour: #00edc3;
+}
+
+.civilian {
+	--shipcolour: #a363f5;
+}
+
+.family {
+	--shipsign: "\eb68";
+}
+
+.love {
+	--shipsign: "\ea55";
+}
+
+.friends {
+	--shipsign: "\ec5f";
+}
+
+.neutral {
+	--shipsign: "\ec37";
+}
+
+.dislike {
+	--shipsign: "\ec2e";
+}
+
+.hate {
+	--shipsign: "\ec7c";
+}
+
 .ishika-threadtracker * {
 	margin: 0;
 }

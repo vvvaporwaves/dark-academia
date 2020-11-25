@@ -1,0 +1,485 @@
+.ishika-threadtracker * {
+	margin: 0;
+}
+.ishika-threadtracker {
+	width: 500px;
+	height: 250px;
+	background: #f1ebeb;
+	margin: auto;
+	border: 5px solid var(--midtone);
+	padding: 16px;
+	background-clip: content-box;
+	position: relative;
+}
+.ishika-threadtracker input[type="radio"] {
+	display: none;
+}
+.ishika-threadtracker input[type="radio"] + label {
+	position: absolute;
+	right: calc(16px * 4);
+	top: calc(8px * 8);
+	font-size: 30px;
+	color: var(--midtone);
+	cursor: pointer;
+	z-index: 10;
+}
+.ishika-threadtracker input[id*="TTthreads"] + label {
+	top: calc(8px * 13.5);
+}
+.ishika-threadtracker input[id*="TTships"] + label {
+	top: calc(8px * 18.5);
+}
+.ishika-threadtracker input[type="radio"]:checked + label {
+	color: var(--highlight);
+}
+.ishika-threadtracker
+	input[type="radio"]:checked
+	+ label
+	> div[class*="ishikaL-"]:after {
+	opacity: 1;
+}
+.ishika-threadtracker
+	input[type="radio"]:checked
+	+ label
+	> div[class*="ishikaL-"]:before {
+	opacity: 0;
+}
+div[class*="ishikaL-"]:before,
+div[class*="ishikaL-"]:after {
+	font-family: "honeybee" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position: absolute;
+	transition: 0.8s ease;
+}
+div[class*="ishikaL-"]:after {
+	opacity: 0;
+}
+.ishikaL-home:before {
+	content: "\ea63";
+}
+.ishikaL-home:after {
+	content: "\ea62";
+}
+.ishikaL-list:before {
+	content: "\ea98";
+}
+.ishikaL-list:after {
+	content: "\ea97";
+}
+.ishikaL-ships:before {
+	content: "\eb9c";
+}
+.ishikaL-ships:after {
+	content: "\eb9b";
+}
+
+input[id*="-TThome"]:checked ~ .ishikathreadtracker-home {
+	opacity: 1;
+	z-index: 2;
+}
+
+input[id*="-TThome"]:checked ~ .ishikathreadtracker-home .ishika-charimg {
+	margin: 0 0 0 0;
+}
+
+input[id*="-TThome"]:checked ~ .ishikathreadtracker-home h1 {
+	transform: rotate(-5deg) scale(1);
+}
+
+input[id*="-TThome"]:checked ~ .ishikathreadtracker-home .ishikaTT-wand {
+	margin: 100px 0 0 -50px;
+}
+
+input[id*="-TThome"]:checked ~ .ishikathreadtracker-home:before {
+	top: 0;
+}
+
+input[id*="-TThome"]:checked ~ .ishikathreadtracker-home:after {
+	right: 0;
+}
+
+input[id*="-TTthreads"]:checked ~ .ishikathreadtracker-threads {
+	opacity: 1;
+	z-index: 2;
+}
+
+input[id*="-TTthreads"]:checked ~ .ishikathreadtracker-threads:before {
+	top: 0;
+}
+
+input[id*="-TTthreads"]:checked ~ .ishikathreadtracker-threads:after {
+	bottom: -190px;
+}
+
+input[id*="-TTthreads"]:checked
+	~ .ishikathreadtracker-threads
+	.ishika-threadscroll {
+	opacity: 1;
+	transition: 0.5s 0.4s ease;
+}
+
+input[id*="-TTthreads"]:checked ~ .ishikathreadtracker-threads .ishika-thrdeco {
+	background: var(--thrdecobg) -85px / 570px no-repeat;
+}
+
+input[id*="-TTships"]:checked ~ .ishikathreadtracker-ships {
+	opacity: 1;
+	z-index: 2;
+}
+
+input[id*="-TTships"]:checked ~ .ishikathreadtracker-ships:before {
+	top: -125px;
+}
+
+input[id*="-TTships"]:checked ~ .ishikathreadtracker-ships:after {
+	background: var(--ship2bg) -25px -50px / 570px no-repeat;
+	opacity: 1;
+}
+
+input[id*="-TTships"]:checked ~ .ishikathreadtracker-ships ul {
+	opacity: 1;
+	transition: 0.5s 0.7s ease;
+}
+
+.ishika-threadtracker section[class*="ishikathreadtracker-"] {
+	position: absolute;
+	top: 16px;
+	height: 249px;
+	width: 499px;
+	z-index: 1;
+	overflow: hidden;
+	transition: 0.3s ease;
+	opacity: 0;
+}
+section[class*="ishikathreadtracker-"] * {
+	transition: 1s ease;
+}
+.ishikathreadtracker-home {
+	display: grid;
+	grid: ". img main" auto / 40px 175px auto;
+}
+.ishikathreadtracker-home:before {
+	content: "";
+	display: block;
+	position: absolute;
+	background: var(--homebg) -60px -55px / 590px;
+	width: 300px;
+	height: 110px;
+	z-index: 0;
+	top: -110px;
+	left: 0;
+	overflow: hidden;
+	transition: 0.8s ease;
+}
+.ishikathreadtracker-home:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: var(--homebg) -435px -60px / 590px;
+	width: 120px;
+	height: 250px;
+	z-index: 0;
+	top: 0;
+	right: -120px;
+	overflow: hidden;
+	transition: 0.8s ease;
+}
+.ishika-charimg {
+	position: relative;
+	width: 175px;
+	height: 250px;
+	grid-area: img;
+	z-index: 2;
+	margin: 250px 0 0 0;
+}
+.ishika-charimg:before {
+	content: "";
+	display: block;
+	background: var(--img) 0 / cover no-repeat;
+	width: 175px;
+	height: 250px;
+	z-index: 2;
+	position: relative;
+}
+.ishika-charimg:after {
+	content: "";
+	background: var(--homebg) -60px -160px / 590px no-repeat;
+	width: 300px;
+	height: 150px;
+	display: block;
+	position: absolute;
+	left: -40px;
+	bottom: 0;
+	z-index: 0;
+}
+.ishika-threadtracker h1 {
+	grid-area: main;
+	font: 600 40px/1em "Oswald", sans-serif;
+	text-transform: uppercase;
+	color: var(--highlight);
+	word-break: break-word;
+	width: 200px;
+	position: relative;
+	margin: 22px 0 0 22px;
+	transform-origin: left top;
+	transform: rotate(0deg) scale(0);
+	transition: 1s ease;
+}
+.ishika-threadtracker h1:after {
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	-webkit-text-stroke: 1px var(--shadow);
+	content: var(--name);
+	display: block;
+	color: transparent;
+	width: 200px;
+}
+.ishikaTT-wand {
+	grid-area: main;
+	z-index: 2;
+	background: var(--wandbg) 0 5px / 265px no-repeat;
+	font: 12px/1em arial;
+	width: 260px;
+	height: 150px;
+	margin: 245px 0 0 -50px;
+	overflow: hidden;
+	padding: 0 16px;
+}
+.ishikaTT-wand dl {
+	margin-top: 18px;
+	width: 180px;
+}
+.ishikaTT-wand dt {
+	font: bold 14px/1em arial;
+}
+.ishikaTT-wand dt:nth-child(1) {
+	margin-left: 83px;
+	width: 32px;
+}
+.ishikaTT-wand dt:nth-child(2) {
+	margin-left: 66px;
+	width: 65px;
+}
+.ishikaTT-wand dt:nth-child(3) {
+	margin-left: 23px;
+	width: 113px;
+	margin-bottom: 8px;
+	text-indent: 21px;
+}
+.ishikaTT-wand dt:nth-child(-n + 2):after {
+	content: ",";
+}
+.ishikaTT-wand dd {
+	text-align: justify;
+}
+.ishikathreadtracker-threads {
+	color: #f1ebeb;
+	font: 13px arial;
+}
+.ishikathreadtracker-threads:before {
+	background: var(--thread1bg) -30px -10px / 460px no-repeat;
+	content: "";
+	display: block;
+	width: 500px;
+	height: 250px;
+	position: absolute;
+	top: -250px;
+	left: 0;
+	z-index: 2;
+	transition: 0.8s ease;
+}
+.ishikathreadtracker-threads:after {
+	background: var(--thread2bg) 0 0 / 460px no-repeat;
+	content: "";
+	display: block;
+	width: 500px;
+	height: 250px;
+	position: absolute;
+	bottom: -250px;
+	left: 0;
+	z-index: 1;
+	transition: 0.8s ease;
+}
+.ishika-threadscroll {
+	display: block;
+	width: 200px;
+	margin: 15px 0 0 110px;
+	height: 170px;
+	overflow: auto;
+	padding: 0 8px 0 50px;
+	position: relative;
+	z-index: 3;
+	opacity: 0;
+}
+.ishika-threadscroll::-webkit-scrollbar {
+	width: 8px;
+}
+.ishika-threadscroll::-webkit-scrollbar-thumb {
+	background: linear-gradient(var(--highlight), var(--shadow));
+	border: 1px solid var(--highlight);
+}
+.ishika-threadscroll::-webkit-scrollbar-track {
+	background: transparent;
+}
+.ishikathreadtracker-threads article {
+	border-top: 1px solid var(--midtone);
+	position: relative;
+	z-index: 3;
+}
+.ishikathreadtracker-threads article h2 {
+	float: left;
+	position: sticky;
+	top: 5px;
+	margin-top: 5px;
+	margin-left: -50px;
+	display: inline-block;
+	background: var(--monthbg);
+	height: 40px;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+}
+.ishikathreadtracker-threads dt {
+	margin: 12px 0 2px;
+}
+.ishikathreadtracker-threads a {
+	text-decoration: none;
+	color: var(--midtone);
+	font: 600 16px/1em oswald;
+	text-transform: uppercase;
+	transition: 0.3s ease;
+}
+.ishikathreadtracker-threads a:hover {
+	color: var(--highlight);
+}
+.ishikathreadtracker-threads dd {
+	margin-bottom: 12px;
+}
+.ishikathreadtracker-threads ul {
+	list-style-type: none;
+	padding: 0;
+}
+.ishikathreadtracker-threads li {
+	margin-right: 8px;
+}
+li[class*="thread-"]:before {
+	font-weight: bold;
+	margin-right: 4px;
+}
+.thread-with:before {
+	content: "with";
+}
+.thread-location:before {
+	content: "in";
+}
+.ishika-thrdeco {
+	position: absolute;
+	width: 500px;
+	height: 250px;
+	background: var(--thrdecobg) -285px / 1000px no-repeat;
+	top: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.ishikathreadtracker-ships {
+	position: relative;
+}
+
+.ishikathreadtracker-ships:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	background: var(--ship1bg) 60px / 350px no-repeat;
+	top: 250px;
+	left: 0;
+	transition: 0.8s ease;
+}
+
+.ishikathreadtracker-ships:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 500px;
+	height: 250px;
+	background: var(--ship2bg) -300px -50px / 1070px no-repeat;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.8s ease;
+}
+
+.ishikathreadtracker-ships ul {
+	list-style-type: none;
+	padding: 0 0 16px 0;
+	width: 220px;
+	margin: 16px 0 16px 132px;
+	height: 200px;
+	display: grid;
+	grid: 1fr 1fr 1fr / auto-flow 65%;
+	gap: 16px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	color: #f1ebeb;
+	font: 13px arial;
+	position: relative;
+	z-index: 3;
+	opacity: 0;
+}
+.ishikathreadtracker-ships ul::-webkit-scrollbar {
+	height: 8px;
+}
+.ishikathreadtracker-ships ul::-webkit-scrollbar-thumb {
+	background: linear-gradient(90deg, var(--highlight), var(--shadow));
+	border: 1px solid var(--highlight);
+}
+.ishikathreadtracker-ships ul::-webkit-scrollbar-track {
+	background: transparent;
+}
+.ishikathreadtracker-ships ul li {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+.ishikathreadtracker-ships ul h3 {
+	font: 600 13px/1.3em "Oswald", sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 4px;
+	display: flex;
+	width: 100px;
+}
+.ishikathreadtracker-ships h3:before {
+	content: var(--shipsign);
+	color: var(--shadow);
+	display: flex;
+	width: 27px;
+	height: 26px;
+	border-radius: 100%;
+	margin: 4px 8px 0 0;
+	background: var(--shipcolour);
+	flex: none;
+	font-size: 16px;
+	font-family: "honeybee" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	justify-content: center;
+	align-items: center;
+}

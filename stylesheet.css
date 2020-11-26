@@ -555,3 +555,10 @@ a[class="v3credit"] {
 a[class="v3credit"]:hover {
 	color: transparent!important;
 }
+
+.ishika-threadtracker dt[class="complete"],
+.ishika-threadtracker dt[class="complete"] + dd {
+	opacity: 0.25;
+	text-decoration: line-through;
+}
+

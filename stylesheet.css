@@ -277,7 +277,7 @@ section[class*="ishikathreadtracker-"] * {
 	word-break: break-word;
 	width: 200px;
 	position: relative;
-	margin: 22px 0 0 22px;
+	margin: 28px 0 0 5px;
 	transform-origin: left top;
 	transform: rotate(0deg) scale(0);
 	transition: 1s ease;

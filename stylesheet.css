@@ -562,3 +562,9 @@ a[class="v3credit"]:hover {
 	text-decoration: line-through;
 }
 
+.gryffindor, .ravenclaw, .slytherin, .hufflepuff, .faculty, .civilian {
+	color: unset!important;
+	font-family: unset!important;
+	font-weight: unset!important;
+	text-shadow: unset!important;
+}

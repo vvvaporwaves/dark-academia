@@ -60,6 +60,7 @@
 	padding: 16px;
 	background-clip: content-box;
 	position: relative;
+	color: black;
 }
 .ishika-threadtracker input[type="radio"] {
 	display: none;
@@ -398,6 +399,7 @@ section[class*="ishikathreadtracker-"] * {
 	justify-content: center;
 	align-items: center;
 	font-size: 14px;
+	color: black;
 }
 .ishikathreadtracker-threads dt {
 	margin: 12px 0 2px;

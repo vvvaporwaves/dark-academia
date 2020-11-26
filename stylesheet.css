@@ -275,7 +275,7 @@ section[class*="ishikathreadtracker-"] * {
 	text-transform: uppercase;
 	color: var(--highlight);
 	word-break: break-word;
-	width: 200px;
+	width: 210px;
 	position: relative;
 	margin: 28px 0 0 5px;
 	transform-origin: left top;

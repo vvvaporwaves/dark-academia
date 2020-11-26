@@ -535,3 +535,23 @@ li[class*="thread-"]:before {
 	justify-content: center;
 	align-items: center;
 }
+
+.v3credit {
+	position: absolute;
+	bottom: -5px;
+	right: 16px;
+	background: var(--highlight);
+	height: 5px;
+	color: transparent!important;
+	width: 100px;
+	overflow: hidden!important;
+}
+
+a[class="v3credit"] {
+	color: transparent!important;
+	text-decoration: none;
+}
+
+a[class="v3credit"]:hover {
+	color: transparent!important;
+}

@@ -119,10 +119,29 @@
 
 .seamus {
 	--name: "seamus sauvage";
-	--shadow: #201613;
-	--midtone: #c6b8a9;
-	--highlight: #80828d;
-	--img: url(https://cdn.discordapp.com/attachments/717164713925935175/777231490354249798/seamus3.png)
+	--shadow: #73453c;
+	--midtone: #e9bab4;
+	--highlight: #C39DB3;
+	--img: url(https://i.postimg.cc/sXvKd09p/041.png)
+		0 / cover;
+	--icon: "\a91";
+
+	--wandbg: url(//kopefully.github.io/dark-academia/seamus-new/wandbg.svg);
+	--homebg: url(//kopefully.github.io/dark-academia/seamus-new/homebg.svg);
+	--thread1bg: url(//kopefully.github.io/dark-academia/seamus-new/thread1bg.svg);
+	--thread2bg: url(//kopefully.github.io/dark-academia/seamus-new/thread2bg.svg);
+	--thrdecobg: url(//kopefully.github.io/dark-academia/seamus-new/thrdecobg.svg);
+	--monthbg: url(//kopefully.github.io/dark-academia/seamus-new/monthbg.svg) 0 /
+		contain no-repeat;
+	--ship1bg: url(//kopefully.github.io/dark-academia/seamus-new/ship1bg.svg);
+	--ship2bg: url(//kopefully.github.io/dark-academia/seamus-new/ship2bg.svg);
+
+	/* old seamus colours 
+	--name: "seamus sauvage";
+	--shadow: #73453c;
+	--midtone: #e9bab4;
+	--highlight: #c39db3;
+	--img: url(https://i.postimg.cc/sXvKd09p/041.png)
 		0 / cover;
 	--icon: "\a91";
 
@@ -134,7 +153,7 @@
 	--monthbg: url(//kopefully.github.io/dark-academia/seamus/monthbg.svg) 0 /
 		contain no-repeat;
 	--ship1bg: url(//kopefully.github.io/dark-academia/seamus/ship1bg.svg);
-	--ship2bg: url(//kopefully.github.io/dark-academia/seamus/ship2bg.svg);
+	--ship2bg: url(//kopefully.github.io/dark-academia/seamus/ship2bg.svg); */
 }
 
 .phoenix {

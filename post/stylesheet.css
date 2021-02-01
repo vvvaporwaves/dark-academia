@@ -15,6 +15,14 @@
 	--font: starry;
 }
 
+.blaise .ishikapost-icon:before {
+	margin: 0.2em 0 0 0;
+}
+
+.blaise .ishika-posting h1 {
+	color: #F4F4F4!important;
+}
+
 .ishika-posting {
 	width: 400px;
 	color: black;

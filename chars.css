@@ -175,3 +175,23 @@
 	--ship1bg: url(//kopefully.github.io/dark-academia/phe/ship1bg.svg);
 	--ship2bg: url(//kopefully.github.io/dark-academia/phe/ship2bg.svg);
 }
+
+.blaise {
+	--name: "blaise saint";
+	--shadow: #324E53;
+	--midtone: #5F2B30;
+	--highlight: #324E53;
+	--img: url(https://cdn.discordapp.com/attachments/567148569728122881/788882843769110549/whatchasayaboutlastname_waifu2x_art_noise3_tta_1_1.png)
+		0 / cover;
+	--icon: "\a96";
+
+	--wandbg: url(//kopefully.github.io/dark-academia/blaise/wandbg.svg);
+	--homebg: url(//kopefully.github.io/dark-academia/blaise/homebg.svg);
+	--thread1bg: url(//kopefully.github.io/dark-academia/blaise/thread1bg.svg);
+	--thread2bg: url(//kopefully.github.io/dark-academia/blaise/thread2bg.svg);
+	--thrdecobg: url(//kopefully.github.io/dark-academia/blaise/thrdecobg.svg);
+	--monthbg: url(//kopefully.github.io/dark-academia/blaise/monthbg.svg) 0 / contain
+		no-repeat;
+	--ship1bg: url(//kopefully.github.io/dark-academia/blaise/ship1bg.svg);
+	--ship2bg: url(//kopefully.github.io/dark-academia/blaise/ship2bg.svg);
+}

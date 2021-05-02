@@ -1,7 +1,8 @@
-/* if any of them don't use starry for their font icon just make a new selector for them */  
+.idris {
+	--font: honeybee;
+}
 
 .caspian,
-.idris,
 .micah,
 .leda,
 .phoenix,
@@ -12,20 +13,16 @@
 	--font: starry;
 }
 
-/* make sure to link this file directly in the css file or the icons won't show up
-   and update the icons to match your current icons b/c these are the old ones
-   this file will only affect your post templates */ 
-
 .idris {
 	--iconV2: "\eba9";
 }
 
 .caspian {
-	--iconV2: "\ebf7";
+	--iconV2: "\a62";
 }
 
 .micah {
-	--iconV2: "\ec6c";
+	--iconV2: "\a28";
 }
 
 .serena {

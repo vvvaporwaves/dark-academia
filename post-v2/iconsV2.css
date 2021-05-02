@@ -1,0 +1,53 @@
+/* if any of them don't use starry for their font icon just make a new selector for them */  
+
+.caspian,
+.idris,
+.micah,
+.leda,
+.phoenix,
+.seamus,
+.serena,
+.xerxes,
+.blaise {
+	--font: starry;
+}
+
+/* make sure to link this file directly in the css file or the icons won't show up
+   and update the icons to match your current icons b/c these are the old ones
+   this file will only affect your post templates */ 
+
+.idris {
+	--iconV2: "\eba9";
+}
+
+.caspian {
+	--iconV2: "\ebf7";
+}
+
+.micah {
+	--iconV2: "\ec6c";
+}
+
+.serena {
+	--iconV2: "\a93";
+}
+
+.leda {
+	--iconV2: "\a46";
+}
+
+.xerxes {
+	--iconV2: "\a72";
+}
+
+.seamus {
+	--iconV2: "\a91";
+}
+
+.phoenix {
+	--iconV2: "\a25";
+}
+
+.blaise {
+	--iconV2: "\a96";
+}

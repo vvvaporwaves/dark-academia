@@ -1,5 +1,3 @@
-@import url("linkToIconCSSHere";
-
 .ishiPost-galaxy {
 	background: linear-gradient(var(--midtone) 10%, var(--highlight) 150%);
 	padding: 0 50px 0 50px;
@@ -9,6 +7,7 @@
 	border-radius: 5px;
 	border-bottom: 8px solid var(--shadow);
 	position: relative;
+	color: #19191A;
 }
 
 .ishiPost-decoContain {
@@ -48,6 +47,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.galadriel .ishiPost-decoration:after {
+	color: var(--shadow)!important;
 }
 
 .ishiPost-decoration:after {
@@ -100,7 +103,7 @@
 	padding: 0;
 	background: var(--midtone);
 	padding: 2px 5px;
-	font: 11px arial;
+	font: 11px/1em arial;
 	text-transform: uppercase;
 }
 

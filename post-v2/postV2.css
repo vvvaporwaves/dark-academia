@@ -1,0 +1,140 @@
+.ishiPost-galaxy {
+	background: linear-gradient(var(--midtone) 10%, var(--highlight) 150%);
+	padding: 0 50px 0 50px;
+	width: 425px;
+	box-sizing: border-box;
+	margin: 50px auto;
+	border-radius: 5px;
+	border-bottom: 8px solid var(--shadow);
+	position: relative;
+}
+
+.ishiPost-decoContain {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 425px;
+	height: 125px;
+	margin: 0 0 0 -50px;
+	overflow: hidden;
+}
+
+.ishiPost-decoContain:after {
+	content: " ";
+	width: 430px;
+	height: 1px;
+	position: absolute;
+	background: var(--shadow);
+	display: block;
+	z-index: 1;
+}
+
+.ishiPost-galaxy div[class*="ishiPost-decoration"] {
+	width: 150px;
+	height: 100px;
+	border-radius: 100%;
+	z-index: 2;
+}
+
+.ishiPost-decoration {
+	width: 75px !important;
+	height: 75px !important;
+	background: linear-gradient(var(--shadow), var(--highlight));
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ishiPost-decoration:after {
+	content: var(--iconV2);
+	font-family: var(--font);
+	display: block;
+	color: var(--midtone);
+	font-size: 30px;
+}
+
+.ishiPost-decoration2 {
+	position: absolute;
+	background: transparent;
+	border-radius: 20% 140% 70% 180%;
+	opacity: 0.7;
+	border: 1px solid var(--shadow);
+	transform: scale(1.2);
+}
+
+.ishiPost-decoration3 {
+	position: absolute;
+	background: transparent;
+	border-radius: 20% 140% 70% 180%;
+	opacity: 0.7;
+	border: 1px solid var(--shadow);
+	transform: scale(1.5);
+}
+
+.ishiPost-decoration4 {
+	position: absolute;
+	background: transparent;
+	border-radius: 20% 140% 70% 180%;
+	opacity: 0.7;
+	border: 1.5px solid var(--shadow);
+	transform: scale(1.8);
+}
+
+.ishiPost-month {
+	width: 325px;
+	padding: 53px 0;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+}
+
+.ishiPost-month dd {
+	margin: 0;
+	padding: 0;
+	background: var(--midtone);
+	padding: 2px 5px;
+	font: 11px arial;
+	text-transform: uppercase;
+}
+
+.ishiPost-month span {
+	display: inline-block;
+	width: 100px;
+	margin: 0 15px;
+}
+
+.ishiPost-container {
+	background: var(--midtone);
+	padding: 25px;
+	text-align: justify;
+	position: relative;
+	z-index: 5;
+	font: 14px/1.5em arial;
+}
+
+.ishiPost-container a {
+	color: var(--highlight);
+	text-transform: uppercase;
+	font-weight: 800;
+	text-decoration: none;
+	transition: 0.3s ease;
+}
+
+.ishiPost-container a:hover {
+	color: var(--shadow);
+}
+
+.ishiPost-container .v3credit {
+	width: 50px;
+	height: 8px;
+	position: absolute;
+	bottom: -8px;
+	right: -25px;
+	background: var(--highlight);
+	z-index: 10;
+}

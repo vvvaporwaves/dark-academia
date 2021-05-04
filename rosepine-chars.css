@@ -1,0 +1,31 @@
+.micah {
+	--shadow: #262e39;
+	--midtone: #c0c4b9;
+	--highlight: #a44d61;
+	--iconV2: "\ea73";
+	--font: cappuccicons;
+}
+
+.solomon {
+	--shadow: #4b3c6a;
+	--midtone: #CFAEB4;
+	--highlight: #BA5093;
+	--iconV2: "\eb70";
+	--font: cappuccicons;
+}
+
+.xerxes {
+	--shadow: #4a2a1b;
+	--midtone: #b08c77;
+	--highlight: #943939;
+	--iconV2: "\ec82";
+	--font: cappuccicons;
+}
+
+.rowan {
+	--shadow: #2C1D20;
+	--midtone: #C9B1BF;
+	--highlight: #BF67C2;
+	--iconV2: "\ea3e";
+	--font: cappuccicons;
+}

@@ -53,6 +53,10 @@
 	color: var(--shadow)!important;
 }
 
+.serena .ishiPost-decoration:after {
+	color: var(--highlight)!important;
+}
+
 .ishiPost-decoration:after {
 	content: var(--iconV2);
 	font-family: var(--font);

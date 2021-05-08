@@ -227,3 +227,25 @@
 	--ship1bg: url(//kopefully.github.io/dark-academia/blaise/ship1bg.svg);
 	--ship2bg: url(//kopefully.github.io/dark-academia/blaise/ship2bg.svg);
 }
+
+.galadriel {
+	--name: "galadriel lost";
+	--shadow: #593427;
+	--midtone: #8D8DA3;
+	--highlight: #EDCD7D;
+	--img: url(https://cdn.discordapp.com/attachments/567148569728122881/838258304290783232/0e15a371788cdef759c0aa2587fa5a40.jpg)
+		0 / cover;
+	--icon: "\a17";
+	--iconV2: "\a17";
+	--font: starry;
+
+	--wandbg: url(//kopefully.github.io/dark-academia/gal/wandbg.svg);
+	--homebg: url(//kopefully.github.io/dark-academia/gal/homebg.svg);
+	--thread1bg: url(//kopefully.github.io/dark-academia/gal/thread1bg.svg);
+	--thread2bg: url(//kopefully.github.io/dark-academia/gal/thread2bg.svg);
+	--thrdecobg: url(//kopefully.github.io/dark-academia/gal/thrdecobg.svg);
+	--monthbg: url(//kopefully.github.io/dark-academia/gal/monthbg.svg) 0 / contain
+		no-repeat;
+	--ship1bg: url(//kopefully.github.io/dark-academia/gal/ship1bg.svg);
+	--ship2bg: url(//kopefully.github.io/dark-academia/gal/ship2bg.svg);
+}

@@ -230,6 +230,26 @@
 
 .galadriel {
 	--name: "galadriel lost";
+	--shadow: #181349;
+	--midtone: #8D8DA3;
+	--highlight: #91C5DB;
+	--img: url(https://cdn.discordapp.com/attachments/567148569728122881/842954261092499456/eulaa_waifu2x_art_noise2_tta_1.png)
+		0 / cover;
+	--icon: "\a17";
+	--iconV2: "\a17";
+	--font: starry;
+
+	--wandbg: url(//kopefully.github.io/dark-academia/gal-new/wandbg.svg);
+	--homebg: url(//kopefully.github.io/dark-academia/gal-new/homebg.svg);
+	--thread1bg: url(//kopefully.github.io/dark-academia/gal-new/thread1bg.svg);
+	--thread2bg: url(//kopefully.github.io/dark-academia/gal-new/thread2bg.svg);
+	--thrdecobg: url(//kopefully.github.io/dark-academia/gal-new/thrdecobg.svg);
+	--monthbg: url(//kopefully.github.io/dark-academia/gal-new/monthbg.svg) 0 / contain
+		no-repeat;
+	--ship1bg: url(//kopefully.github.io/dark-academia/gal-new/ship1bg.svg);
+	--ship2bg: url(//kopefully.github.io/dark-academia/gal-new/ship2bg.svg);
+	
+	/* old gal colours
 	--shadow: #593427;
 	--midtone: #8D8DA3;
 	--highlight: #EDCD7D;
@@ -247,5 +267,5 @@
 	--monthbg: url(//kopefully.github.io/dark-academia/gal/monthbg.svg) 0 / contain
 		no-repeat;
 	--ship1bg: url(//kopefully.github.io/dark-academia/gal/ship1bg.svg);
-	--ship2bg: url(//kopefully.github.io/dark-academia/gal/ship2bg.svg);
+	--ship2bg: url(//kopefully.github.io/dark-academia/gal/ship2bg.svg);*/
 }

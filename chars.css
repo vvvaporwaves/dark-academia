@@ -1,3 +1,10 @@
+.alto {
+	--shadow: #8F7446;
+	--midtone: #bdd09f;
+	--highlight: #b99c6b;
+	--iconV2: "\a47";
+}
+
 .idris {
 	--name: "idris marangoz";
 	--shadow: #342437;
